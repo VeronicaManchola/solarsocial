@@ -104,13 +104,13 @@ $("#contact").submit(function (e) {
             url: "send.php",
             data: dataString,
             success: function () {
-                $('.subscription-success').fadeIn(1000);
-                $('.subscription-error').fadeOut(500);
+                $('.success').fadeIn(1000);
+                $('.error').fadeOut(500);
                 $('.hide-after').fadeOut(500);
             }
         });
     } else {
-        $('.subscription-error').fadeIn(1000);
+        $('.error').fadeIn(1000);
     }
 
     return false;
