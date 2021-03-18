@@ -128,3 +128,30 @@ if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
   )
   document.querySelector('head').appendChild(msViewportStyle)
 }
+
+/* ======================================
+    IsotopeJS
+========================================== */
+
+var $grid = $('.grid').isotope({
+    itemSelector: '.grid-item',
+    percentPosition: true,
+    resize: true,
+    masonry: {
+        columnWidth: '.grid-sizer',
+        gutter: 5
+    }
+});
+// layout Isotope after each image loads
+$grid.imagesLoaded().progress( function() {
+    $grid.isotope('layout');
+});
+
+$(window).resize(function () {
+    $grid.imagesLoaded(function () {
+        setTimeout(function () {
+            $grid.find('.grid-item').removeClass('wow').removeClass('animated'); // avoid problem to filter after window resize
+            $grid.isotope('layout');
+        }, 300);
+    });
+});

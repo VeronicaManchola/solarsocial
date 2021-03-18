@@ -465,6 +465,13 @@ header .intro-section .buttons {
     font-size: 20px;
 }
 
+.app-brief .center-align p {
+    display: block;
+    float: none;
+    margin-top: 50px;
+    font-size: 20px;
+}
+
 .app-brief .left-align h3 {
     display: block;
     float: none;
@@ -603,7 +610,37 @@ object {
 
 
 /*---------------------------------------
-   SECTION:  SCREENSHOTS 
+   SECTION:  ISOTOPE
+-----------------------------------------*/
+
+/* clear fix */
+.grid:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.grid-sizer,
+.grid-item {
+    width: calc(33.333% - 5px);
+    margin-bottom: 5px;
+}
+
+.grid-item.grid-item--width2 {
+    width: calc(66.666% - 5px);
+}
+
+.grid-item {
+    float: left;
+}
+
+.grid-item img {
+    display: block;
+    max-width: 100%;
+}
+
+/*---------------------------------------
+   SECTION:  SCREENSHOTS
 -----------------------------------------*/
 
 .screenshots {
