@@ -768,6 +768,25 @@ object {
     margin-bottom: 30px;
 }
 
+a.btn-floating {
+    background: #125688;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 30px;
+    width: 68px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+.btn-floating:hover {
+    opacity: 0.7;
+}
+
 
 /*---------------------------------------
    SECTION:  FOOTER                
