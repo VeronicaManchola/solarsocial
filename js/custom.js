@@ -7,6 +7,14 @@ jQuery(window).on('load', function() {
 	jQuery(".status").fadeOut();
         // will fade out the whole DIV that covers the website.
 	jQuery(".preloader").delay(1000).fadeOut("slow");
+
+    var target = window.location.hash;
+
+    if(target) {
+        $('html, body').animate({
+            scrollTop: $(target).offset().top
+        }, 300);
+    }
 });
 
 /* =================================
@@ -63,15 +71,15 @@ if (window.innerWidth >= 768 && window.innerWidth <= 991) {
 /* =================================
 ===  FULL SCREEN HEADER         ====
 =================================== */
-function alturaMaxima() {
-  var altura = $(window).height();
-  $(".full-screen").css('min-height',altura); 
+function alturaMedia() {
+  var altura = $(window).height() * 0.6;
+  $(".mid-screen").css('min-height',altura);
   
 }
 
 $(document).ready(function() {
-  alturaMaxima();
-  $(window).bind('resize', alturaMaxima);
+    alturaMedia();
+  $(window).bind('resize', alturaMedia);
 });
 
 /* =================================
