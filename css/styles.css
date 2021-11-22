@@ -323,8 +323,22 @@ header .mid-screen {
 }
 
 .navbar-inverse .navbar-toggle {
-border-color: #313131;
-background: #313131;
+    border-color: #313131;
+    background: #313131;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-weight: 900;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(0,0,0,0.7);
+    border-color: rgba(0,0,0,.9);
+    border: 2px solid;
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.7%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
 header .only-logo .navbar {
@@ -363,6 +377,7 @@ header .intro-section .buttons {
 
 .after-header {
     margin-top: 80px;
+    background-color: #125688;
 }
 
 /*---------------------------------------
