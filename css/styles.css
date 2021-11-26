@@ -456,6 +456,7 @@ header .intro-section .buttons {
 
 .app-brief h2 {
     margin-bottom: 20px;
+    font-size: 35px;
 }
 
 .app-brief .phone-image {
@@ -464,6 +465,15 @@ header .intro-section .buttons {
 
 .app-brief .phone-image img {
     width: 100%;
+}
+
+.app-brief .center-img {
+    height: 300px;
+    object-fit: cover;
+}
+
+.app-brief .member-img {
+    max-width: 300px;
 }
 
 .app-brief .left-align {
@@ -475,7 +485,7 @@ header .intro-section .buttons {
     display: block;
     float: none;
     margin-top: 50px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .app-brief .center-align p {
@@ -492,6 +502,10 @@ header .intro-section .buttons {
     font-size: 3rem;
 }
 
+.app-brief .left-align h4 {
+    font-size: 20px;
+}
+
 .app-brief .left-align .feature-list {
     margin-top: 40px;
 }
@@ -505,6 +519,14 @@ header .intro-section .buttons {
     vertical-align: inherit;
 }
 
+.phone-image.round-image {
+    max-width: 300px;
+    max-height: 300px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: auto;
+    margin-left: auto;
+}
 
 /* VIDEO */
 
