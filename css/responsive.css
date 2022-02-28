@@ -158,6 +158,12 @@ RESPONSIVE FIXES
         font-size: 55px;
         line-height: 70px;
     }
+
+    .grid-sizer.simple,
+    .grid-item.simple {
+        width: calc(100% - 5px);
+        margin-bottom: 5px;
+    }
 }
 
 @media (max-width: 480px) {
